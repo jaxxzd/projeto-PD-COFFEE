@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D3AD81;
+}
+
+figcaption {
+    display: none;
+}
+
+#header-coffee {
+    width: 100%;
+    height: 3.75rem;
+    padding: 12px 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#nav-coffee {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ul-header-item-coffee {
+    display: none;
+}
+
+.logo-coffee {
+    width: 30px;
+    height: 30px;
+}
+
+.figure-logo-coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-logo-coffee h2 {
+    font-family: 'Aclonica', sans-serif;
+    font-weight: 500;
+    font-size: .6rem;
+    color: #FFFFFF;
+    margin-top: 0.2rem;
+}
+
+#container-input-search-coffee {
+    display: flex;
+    align-items: center;
+    background-color: #272727;
+    width: max-content;
+    height: 1.875rem;
+    border-radius: 15px;
+    padding: 8px;
+    transition: .3s ease;
+}
+
+#container-input-search-coffee:focus-within {
+    background: #2c2c2c;
+    box-shadow: 0px 0px 6px #C28E52;
+}
+
+.bi-search {
+    font-size: 1rem;
+    padding-top: 4px;
+    color: #C28E52;
+}
+
+#input-search-coffee {
+    width: 8rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    margin-left: 8px;
+    flex: 1;
+}
+
+#input-search-coffee::placeholder {
+    font-size: .6rem;
+    font-weight: 500;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #FFFFFF;
+    opacity: .5;
+}
+
+#container-icon-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.bi-cart3 {
+    position: relative;
+    font-size: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.bi-cart3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    transition: .3s ease;
+    transform-origin: 0 0;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.bi-cart3:hover::after {
+    transform: scaleX(1);
+}
+
+#icon-menu-coffee {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+#main-coffee {
+    width: 100%;
+    height: 100%;
+}
+
+#section-coffee {
+    width: 100%;
+    height: 25rem;
+    background-image: url(./imagens/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#container-attention-coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+#title-main-coffee {
+    width: 8rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #C28E52;
+    font-family: "Poppins", sans-serif;
+    line-height: 30px;
+    letter-spacing: 4px;
+}
+
+#link-btn-coffee {
+    width: 5.625rem;
+}
+
+#btn-coffee {
+    background-color: #C28E52;
+    width: 5.625rem;
+    height: 1.5625rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: .5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+
+}
+
+#description-main-coffee {
+    display: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 30px;
+    letter-spacing: 15px;
+}
+
+#img-glass-coffee {
+    width: 11rem;
+    height: 12rem;
+}
+
+#section-about-coffee {
+    width: 100%;
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 4%;
+    background-color: #1E1E1E;
+}
+
+#title-about-coffee {
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: "Poltawski Nowy", serif;
+    position: relative;
+}
+
+#title-about-coffee::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 40%;
+    background-color: #C28E52;
+}
+
+#container-about-coffee {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 1%;
+}
+
+#img-about-coffee {
+    width: 10rem;
+    height: 6rem;
+    object-fit: cover;
+}
+
+#container-txt-about-coffee {
+    width: 10rem;
+    height: 6rem;
+    font-weight: 500;
+    font-size: .5rem;
+    color: #FFFFFF;
+    font-family: "Montserrat Alternates", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#section-products-coffee {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 12px 4%;
+}
+
+#container-main-products-coffee {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
+}
+
+#title-products-coffee {
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Poltawski Nowy", serif;
+    position: relative;
+}
+
+#title-products-coffee::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    background-color: #C28E52;
+}
+
+.container-products-coffee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 4px;
+}
+
+.figure-products-coffee {
+    width: 11.875rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0CBB2;
+}
+
+.img-products-coffee {
+    width: 7.5rem;
+    height: 6.25rem;
+    object-fit: contain;
+}
+
+.container-information-product-coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-product-coffee {
+    font-weight: 500;
+    font-size: .75rem;
+    color: #000;
+    font-family: "Poltawski Nowy", serif;
+    margin-top: 4px;
+}
+
+.valor-product-coffee {
+    font-weight: 500;
+    font-size: .75rem;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+.description-products-coffee {
+    display: none;
+}
+
+.container-btn-products-coffee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9.375rem;
+    height: 1.7rem;
+    padding: 2px;
+    background-color: #C28E52;
+    border-radius: 5px;
+}
+
+.link-product-coffee {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-buy {
+    font-weight: 600;
+    font-size: .375rem;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    padding-left: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.btn-link-buy:hover {
+    color: #FFFFFF;
+    background-color: #C28E52;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.btn-add-cart {
+    font-weight: 600;
+    font-size: .375rem;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 5rem;
+    height: 1.5625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    border: none;
+    outline: none;
+}
+
+#footer-coffee {
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 32px 1%;
+    margin-top: 5rem;
+}
+
+#section-footer-coffee {
+    width: 11.25rem;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8.5px;
+}
+
+#figure-logo-footer-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-pd-coffee {
+    font-family: 'Aclonica', sans-serif;
+    font-weight: 500;
+    font-size: .6rem;
+    color: #FFFFFF;
+    margin-left: 0.2rem;
+}
+
+#container-footer-network-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.link-network-coffee {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: #3A261D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C28E52;
+}
+
+.link-network-coffee i {
+    font-size: .875rem;
+}
+
+#copyright-coffee {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: .6rem;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #C28E52;
+    width: 90%;
+}
+
+#cnpj-coffee {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: .6rem;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #C28E52;
+    width: 90%;
+}
+
+#rights-coffee {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: .6rem;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+#section-footer-local-and-hour-coffee {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#container-footer-local {
+    border-bottom: 1px solid #C28E52;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+#container-footer-local h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: .875rem;
+    color: #FFFFFF;
+}
+
+#container-footer-local p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: .6rem;
+    color: #FFFFFF;
+    line-height: 15px;
+}
+
+#container-footer-hour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+#container-footer-hour h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: .875rem;
+    color: #FFFFFF;
+}
+
+#container-footer-hour p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: .6rem;
+    color: #FFFFFF;
+}
+
+/* Function Items */
+
+#aside-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+    transition: .3s ease;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked+#aside-menu {
+    right: 0;
+}
+
+#container-menu {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0 0 15px 15px;
+    background-color: #1E1E1E;
+}
+
+#header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 4%;
+    border-bottom: 1px solid #585252;
+}
+
+#icon-close-coffee {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: #C28E52;
+}
+
+#container-items-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 32px;
+}
+
+#container-items-menu a {
+    font-weight: 300;
+    font-size: .75rem;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Cart Page */
+
+#aside-cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+    transition: .3s ease;
+}
+
+#toggle-menu-cart {
+    display: none;
+}
+
+#toggle-menu-cart:checked+#aside-cart {
+    right: 0;
+}
+
+#container-aside-cart {
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header-cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 4%;
+    border-bottom: 1px solid #585252;
+}
+
+#icon-close-cart-coffee {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: #C28E52;
+}
+
+#section-products-cart-coffee {
+    width: 100%;
+    padding: 16px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-main-products-cart-coffee {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container-product-information-cart-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.container-product-cart-coffee {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-product-cart-coffee {
+    width: 3rem;
+    height: 3rem;
+}
+
+#container-information-product-cart-coffee {
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+#container-information-product-cart-coffee h2 {
+    font-weight: 500;
+    font-size: .75rem;
+    color: #FFFFFF;
+    font-family: "Poltawski Nowy", serif;
+}
+
+#container-information-product-cart-coffee p {
+    font-weight: 500;
+    font-size: .75rem;
+    color: #C28E52;
+    font-family: "Poppins", sans-serif;
+}
+
+#container-remove-and-add-trash-cart-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#container-remove-and-add-cart-coffee {
+    width: 5rem;
+    height: 1.25rem;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #C28E52;
+    border-radius: 15px;
+}
+
+#icon-remove-coffee {
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #C28E52;
+}
+
+#container-remove-and-add-cart-coffee p {
+    font-weight: 500;
+    font-size: .75rem;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+#icon-add-coffee {
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #C28E52;
+}
+
+#icon-trash-coffee {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #CF1C1C;
+}
+
+#section-result-cart-coffee {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid #585252;
+    padding: 24px 4%;
+}
+
+#container-result-cart-coffee {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#container-result-cart-coffee h2 {
+    font-weight: 300;
+    font-size: .75rem;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+#valor-divide-coffee h2 {
+    font-weight: 400;
+    font-size: .75rem;
+    color: #C28E52;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#valor-divide-coffee p {
+    font-weight: 300;
+    font-size: .75rem;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+#container-btn-cart-coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 24px;
+}
+
+#btn-result-cart-coffee {
+    width: 10rem;
+    height: 1.25rem;
+    padding: 4px 16px;
+    border: none;
+    outline: none;
+    background-color: #C28E52;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: .75rem;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+#btn-view-products-cart-coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: .75rem;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+#btn-view-products-cart-coffee::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+}

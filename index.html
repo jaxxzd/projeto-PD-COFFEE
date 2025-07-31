@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Café Criativo | Home</title>
+</head>
+
+<body>
+    <header id="header-coffee">
+        <nav id="nav-coffee">
+            <a href="index.html">
+                <figure class="figure-logo-coffee">
+                    <img src="./imagens/logo.png" alt="logo pd coffee" class="logo-coffee">
+                    <figcaption>logo pd coffee</figcaption>
+                    <h2>PD COFFEE</h2>
+                </figure>
+            </a>
+
+            <div id="container-input-search-coffee">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="procurar..." id="input-search-coffee">
+            </div>
+
+            <ul id="ul-header-item-coffee">
+                <li><a href="#section-coffee">HOME</a></li>
+                <li><a href="#section-about-coffee">SOBRE</a></li>
+                <li><a href="#section-products-coffee">CARDÁPIO</a></li>
+            </ul>
+
+            <div id="container-icon-coffee">
+                <label for="toggle-menu-cart">
+                    <i class="bi bi-cart3"></i>
+                </label>
+
+                <label for="toggle-menu">
+                    <span class="material-symbols-outlined" id="icon-menu-coffee">
+                        menu
+                    </span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <input type="checkbox" id="toggle-menu-cart">
+
+    <aside id="aside-cart">
+        <div id="container-aside-cart">
+            <div id="container-aside-top-cart">
+                <div id="header-cart">
+                    <figure class="figure-logo-coffee">
+                        <img src="./imagens/logo.png" alt="logo pd coffee" class="logo-coffee">
+                        <figcaption>logo pd coffee</figcaption>
+                        <h2>PD COFFEE</h2>
+                    </figure>
+
+                    <label for="toggle-menu-cart">
+                        <span class="material-symbols-outlined" id="icon-close-cart-coffee">
+                            close
+                        </span>
+                    </label>
+                </div>
+
+                <section id="section-products-cart-coffee">
+                    <div id="container-main-products-cart-coffee">
+                        <div class="container-product-cart-coffee">
+                            <div id="container-product-information-cart-coffee">
+                                <figure>
+                                    <img src="./imagens/café-expresso.png" alt="Café Expresso"
+                                        class="img-product-cart-coffee">
+                                    <figcaption>Café Expresso</figcaption>
+                                </figure>
+
+                                <div id="container-information-product-cart-coffee">
+                                    <h2>CAFÉ EXPRESSO</h2>
+                                    <p>R$9,00</p>
+                                </div>
+                            </div>
+
+                            <div id="container-remove-and-add-trash-cart-coffee">
+                                <div id="container-remove-and-add-cart-coffee">
+                                    <span class="material-symbols-outlined" id="icon-remove-coffee">
+                                        remove
+                                    </span>
+
+                                    <p>1</p>
+
+                                    <span class="material-symbols-outlined" id="icon-add-coffee">
+                                        add
+                                    </span>
+                                </div>
+
+                                <i class="fa-solid fa-trash-can" id="icon-trash-coffee"></i>
+                            </div>
+                        </div>
+
+                        <div class="container-product-cart-coffee">
+                            <div id="container-product-information-cart-coffee">
+                                <figure>
+                                    <img src="./imagens/capuccino.png" alt="capuccino" class="img-product-cart-coffee">
+                                    <figcaption>capuccino</figcaption>
+                                </figure>
+
+                                <div id="container-information-product-cart-coffee">
+                                    <h2>CAPUCCINO</h2>
+                                    <p>R$14,00</p>
+                                </div>
+                            </div>
+
+                            <div id="container-remove-and-add-trash-cart-coffee">
+                                <div id="container-remove-and-add-cart-coffee">
+                                    <span class="material-symbols-outlined" id="icon-remove-coffee">
+                                        remove
+                                    </span>
+
+                                    <p>1</p>
+
+                                    <span class="material-symbols-outlined" id="icon-add-coffee">
+                                        add
+                                    </span>
+                                </div>
+
+                                <i class="fa-solid fa-trash-can" id="icon-trash-coffee"></i>
+                            </div>
+                        </div>
+
+                        <div class="container-product-cart-coffee">
+                            <div id="container-product-information-cart-coffee">
+                                <figure>
+                                    <img src="./imagens/bolo-red-velvet.png" alt="bolo red velvet"
+                                        class="img-product-cart-coffee">
+                                    <figcaption>bolo red velvet</figcaption>
+                                </figure>
+
+                                <div id="container-information-product-cart-coffee">
+                                    <h2>FATIA BOLO RED VELVET</h2>
+                                    <p>R$21,00</p>
+                                </div>
+                            </div>
+
+                            <div id="container-remove-and-add-trash-cart-coffee">
+                                <div id="container-remove-and-add-cart-coffee">
+                                    <span class="material-symbols-outlined" id="icon-remove-coffee">
+                                        remove
+                                    </span>
+
+                                    <p>1</p>
+
+                                    <span class="material-symbols-outlined" id="icon-add-coffee">
+                                        add
+                                    </span>
+                                </div>
+
+                                <i class="fa-solid fa-trash-can" id="icon-trash-coffee"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="section-result-cart-coffee">
+                <div id="container-result-cart-coffee">
+                    <h2>Total:</h2>
+
+                    <div id="valor-divide-coffee">
+                        <h2>R$44,00</h2>
+                        <p>ou 12x de R$3,66</p>
+                    </div>
+                </div>
+
+                <div id="container-btn-cart-coffee">
+                    <button id="btn-result-cart-coffee">FINALIZAR COMPRA</button>
+                    <a href="" id="btn-view-products-cart-coffee">Ver mais produtos</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <input type="checkbox" id="toggle-menu">
+
+    <aside id="aside-menu">
+        <div id="container-menu">
+            <div id="header-menu">
+                <figure class="figure-logo-coffee">
+                    <img src="./imagens/logo.png" alt="Logo PD COFFEE" class="logo-coffee">
+                    <figcaption>Logo PD COFFEE</figcaption>
+                    <h2 class="logo-pd-coffee">PD COFFEE</h2>
+                </figure>
+
+                <label for="toggle-menu">
+                    <span class="material-symbols-outlined" id="icon-close-coffee">
+                        close
+                    </span>
+                </label>
+            </div>
+
+            <div id="container-items-menu">
+                <a href="#section-coffee">Home</a>
+                <a href="#section-about-coffee">Sobre</a>
+                <a href="#section-products-coffee">Cardápio</a>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main-coffee">
+        <section id="section-coffee">
+            <div id="container-attention-coffee">
+                <h1 id="title-main-coffee">COMECE SEU DIA COM UM CAFÉ</h1>
+                <p id="description-main-coffee"> No PD COFFEE, cada manhã começa com mais sabor, mais calma e mais
+                    inspiração. Aqui, o aroma do café fresco, o ambiente acolhedor e o atendimento atencioso criam o
+                    cenário perfeito para despertar corpo e mente. </p>
+                <a href="#section-products-coffee" id="link-btn-coffee"><button id="btn-coffee">Comprar
+                        café</button></a>
+            </div>
+
+            <div id="image-coffee">
+                <figure>
+                    <img src="./imagens/main.png" alt="Copo de café" id="img-glass-coffee" height="100px">
+                    <figcaption>Copo de café</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="section-about-coffee">
+            <h2 id="title-about-coffee">SOBRE NÓS</h2>
+            <div id="container-about-coffee">
+                <figure>
+                    <img src="./imagens/about.jpg" alt="Sementes de café" id="img-about-coffee" height="100px">
+                    <figcaption>Sementes de café</figcaption>
+                </figure>
+
+                <div id="container-txt-about-coffee">
+                    <p class="txt-about-coffee">O PD COFFEE é uma cafeteria especializada em cafés de qualidade,
+                        ambiente
+                        aconchegante e atendimento personalizado.</p>
+
+                    <p class="txt-about-coffee">
+                        Nosso propósito é oferecer uma experiência única, unindo sabor, cultura e inspiração.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-products-coffee">
+            <h2 id="title-products-coffee">CARDÁPIO</h2>
+            <div id="container-main-products-coffee">
+                <div class="container-products-coffee">
+                    <figure class="figure-products-coffee">
+                        <img src="./imagens/café-expresso.png" alt="café expresso" class="img-products-coffee"
+                            height="100px">
+                        <figcaption>café expresso</figcaption>
+                    </figure>
+
+                    <div class="container-information-product-coffee">
+                        <h2 class="name-product-coffee">CAFÉ EXPRESSO</h2>
+                        <h2 class="valor-product-coffee">R$9,00</h2>
+                    </div>
+
+                    <p class="description-products-coffee">Sabor intenso e aroma marcante. Um clássico que desperta
+                        sentidos
+                        e inspira ideias.</p>
+                    <div class="container-btn-products-coffee">
+                        <a href="#" class="link-product-coffee">
+                            <button class="btn-buy">Comprar</button>
+                        </a>
+                        <a href="#" class="link-product-coffee">
+                            <button class="btn-add-cart"> Adicionar ao carrinho</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-products-coffee">
+                    <figure class="figure-products-coffee">
+                        <img src="./imagens/capuccino.png" alt="capuccino" class="img-products-coffee" height="100px">
+                        <figcaption>capuccino</figcaption>
+                    </figure>
+
+                    <div class="container-information-product-coffee">
+                        <h2 class="name-product-coffee">CAPUCCINO</h2>
+                        <h2 class="valor-product-coffee">R$14,00</h2>
+                    </div>
+
+                    <p class="description-products-coffee">Cremoso, equilibrado e irresistível — o aconchego do café com
+                        o
+                        toque perfeito de leite e espuma.</p>
+                    <div class="container-btn-products-coffee">
+                        <a href="#" class="link-product-coffee">
+                            <button class="btn-buy">Comprar</button>
+                        </a>
+                        <a href="#" class="link-product-coffee">
+                            <button class="btn-add-cart"> Adicionar ao carrinho</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-products-coffee">
+                    <figure class="figure-products-coffee">
+                        <img src="./imagens/bolo-red-velvet.png" alt="fatia bolo red velvet" class="img-products-coffee"
+                            height="200px">
+                        <figcaption>fatia bolo red velvet</figcaption>
+                    </figure>
+
+                    <div class="container-information-product-coffee">
+                        <h2 class="name-product-coffee">FATIA BOLO RED VELVET</h2>
+                        <h2 class="valor-product-coffee">R$21,00</h2>
+                    </div>
+
+                    <p class="description-products-coffee">Macio, elegante e irresistível — uma fatia que combina sabor
+                        único e um toque de doçura na medida certa.</p>
+                    <div class="container-btn-products-coffee">
+                        <a href="#" class="link-product-coffee">
+                            <button class="btn-buy">Comprar</button>
+                        </a>
+                        <a href="#" class="link-product-coffee">
+                            <button class="btn-add-cart"> Adicionar ao carrinho</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-coffee">
+        <section id="section-footer-coffee">
+            <figure id="figure-logo-footer-coffee">
+                <img src="./imagens/logo.png" alt="logo pd coffee" class="logo-coffee">
+                <figcaption>logo pd coffee</figcaption>
+                <h2 class="logo-pd-coffee">PD COFFEE</h2>
+            </figure>
+
+            <div id="container-footer-network-coffee">
+                <a href="" target="_blank" class="link-network-coffee">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+                <a href="" target="_blank" class="link-network-coffee">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="" target="_blank" class="link-network-coffee">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="" target="_blank" class="link-network-coffee">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </div>
+
+            <p id="copyright-coffee">&copy; 2025 PD COFFEE</p>
+            <p id="cnpj-coffee">CNPJ 00.000.000/0001-00</p>
+            <p id="rights-coffee">Todos os direitos reservados.</p>
+        </section>
+
+        <section id="section-footer-local-and-hour-coffee">
+            <div id="container-footer-local">
+                <h2>Localização</h2>
+                <p>Café Criativo <br> Rua das Ideias, 128 - Centro Criativo <br> São Paulo - SP, CEP 01000-000</p>
+            </div>
+
+            <div id="container-footer-hour">
+                <h2>Horários</h2>
+                <p>Segunda a Sexta: 8h às 20h <br> Sábados: 9h às 18h <br> Domingos e feriados: 10h às 16h</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
